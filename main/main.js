@@ -7,7 +7,7 @@ module.exports = function main(inputs) {
 	for(var i = 0; i < inputs.length; i++)
 	{
 		var num = 0;
-		for(var j = 0; j < inputs.length; j++;){
+		for(var j = 0; j < inputs.length; j++){
 			if(inputs[i] == inputs[j])
 			{
 				num ++;
