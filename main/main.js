@@ -4,9 +4,9 @@ module.exports = function main(inputs) {
 	var goods = loadAllItems();
 	var totalPrice = 0.0;
 	var products = [];
-	var num = 0;
-	for(var i = 0; i < inputs.length; i++; )
+	for(var i = 0; i < inputs.length; i++)
 	{
+		var num = 0;
 		for(var j = 0; j < inputs.length; j++;){
 			if(inputs[i] == inputs[j])
 			{
@@ -18,7 +18,6 @@ module.exports = function main(inputs) {
 		{
 			products.push(product);
 		}
-		num = 0;
 	} 
 	console.log("'***<没钱赚商店>购物清单***\n'");
 	for(var index = 0; index < products.length ; index++)
