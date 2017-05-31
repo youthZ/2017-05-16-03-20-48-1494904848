@@ -3,10 +3,10 @@ const loadAllItems = require('./loadAllItems.js');
 module.exports = function main(inputs) {
 	var goods = loadAllItems();
 	var totalPrice = 0.0;
-	var products=[];
+	var products;
 	for (var index_i = 0; index_i < inputs.length; index_i++;){
 		var num = 0;
-		for(var index_j = 0; index_j < inputs.length; index_j++;){
+		for (var index_j = 0; index_j < inputs.length; index_j++;){
 			if(inputs[index_i] == inputs[index_j]){
 				num ++;
 			}
