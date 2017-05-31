@@ -4,14 +4,14 @@ module.exports = function main(inputs) {
 	var goods = loadAllItems();
 	var totalPrice = 0.0;
 	var products=[];
-	for (var index_i = 0; index_i < inputs.length; index_i++;){
+	for (var indexi = 0; indexi < inputs.length; indexi++;){
 		var num = 0;
-		for (var index_j = 0; index_j < inputs.length; index_j++;){
-			if(inputs[index_i] == inputs[index_j]){
+		for (var indexj = 0; indexj < inputs.length; indexj++;){
+			if(inputs[indexi] == inputs[indexj]){
 				num ++;
 			}
 		}
-		var product = {item:inputs[index_i],number:num};
+		var product = {item:inputs[indexi],number:num};
 		if(products.indexOf(product) == -1{
 			products.push(product);
 		}
