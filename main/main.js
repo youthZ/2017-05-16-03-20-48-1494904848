@@ -6,7 +6,6 @@ module.exports = function main(inputs) {
 	var products=[] ;
 	for(var index_i = 0; index < inputs.length; index_i++;){
 		var num = 0;
-		var littlePrice = 0.0;
 		for(var index_j = 0; index_j < inputs.length; index_j++;){
 			if(inputs[index_i] == inputs[index_j]){
 				num ++;
@@ -29,8 +28,9 @@ module.exports = function main(inputs) {
 			}
 		}
 	}
-    console.log("'----------------------\n' +
- '总计：'+totalPrice+'\n' +
- '**********************'");
+	var text = '----------------------\n' +
+            '总计：'+totalPrice+'(元)\n' +
+            '**********************';
+    console.log(text);
     return 'Hello World!';
 };
