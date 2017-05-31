@@ -9,5 +9,5 @@ module.exports = function main(inputs) {
             '×Ü¼Æ£º'+totalPrice+'(Ôª)\n' +
             '**********************';
     console.log(text);
-    return 'Hello World!';
+   // return 'Hello World!';
 };
