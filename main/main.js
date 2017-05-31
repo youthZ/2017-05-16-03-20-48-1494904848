@@ -3,22 +3,8 @@ const loadAllItems = require('./loadAllItems.js');
 module.exports = function main(inputs) {
 	var goods = loadAllItems();
 	var totalPrice = 0.0;
-	var products=[];
-	for(var i = 0; i < inputs.length; i++; )
-	{
-		var num = 0;
-		for(var j = 0; j < inputs.length; j++;){
-			if(inputs[i] == inputs[j])
-			{
-				num ++;
-			}
-		}
-		var product = {item:inputs[i],number:num};
-		if(products.indexOf(product) == -1)
-		{
-			products.push(product);
-		}
-	} 
+	var products = [];
+	
 	console.log("'***<没钱赚商店>购物清单***\n'");
 	for(var index = 0; index < products.length ; index++)
 	{
