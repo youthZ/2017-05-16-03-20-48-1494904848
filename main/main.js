@@ -14,10 +14,21 @@ module.exports = function main(inputs) {
 				num ++;
 			}
 		}
-		var product = {item:inputs[i],number:num};
-		if(!products.indexOf(product))
+		var product = {barcode:inputs[i],number:num};
+		if(products.length == 0)
 		{
 			products.push(product);
+		}else{
+			for (var index = 0; index< products.length ; index++)
+			{
+				if(product.barcode == products[index].barcode)
+				{
+					continue;
+				}else{
+					products.push(product);
+					break;
+				}
+			}
 		}
 	} 
 	for(var index = 0; index < products.length ; index++)
