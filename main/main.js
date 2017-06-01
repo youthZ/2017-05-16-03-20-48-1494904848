@@ -15,20 +15,9 @@ module.exports = function main(inputs) {
 			}
 		}
 		var product = {barcode:inputs[i],number:num};
-		if(products.length == 0)
+		if(isExist(product, products))
 		{
 			products.push(product);
-		}else{
-			for (var index = 0; index< products.length ; index++)
-			{
-				if(product.barcode == products[index].barcode)
-				{
-					continue;
-				}else{
-					products.push(product);
-					break;
-				}
-			}
 		}
 	} 
 	for(var index = 0; index < products.length ; index++)
@@ -47,3 +36,18 @@ module.exports = function main(inputs) {
     console.log(strText);
     return strText;
 };
+function isExist(product,products){
+	if(products.length == 0)
+	{
+		return true;
+	}else{
+		for (var index = 0; index< products.length ; index++)
+		{
+			if(product.barcode == products[index].barcode)
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}
