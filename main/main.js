@@ -15,7 +15,7 @@ module.exports = function main(inputs) {
 			}
 		}
 		var product = {item:inputs[i],number:num};
-		if(£¡products.indexOf(product))
+		if(!products.indexOf(product))
 		{
 			products.push(product);
 		}
