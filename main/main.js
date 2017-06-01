@@ -4,7 +4,7 @@ module.exports = function main(inputs) {
 	var goods = loadAllItems();
 	var totalPrice = 0.0;
 	var products = [];
-	var strText = "***<√ª«Æ◊¨…ÃµÍ>π∫ŒÔ«Âµ•***\n";
+	var strText = "***<Ê≤°Èí±ËµöÂïÜÂ∫ó>Ë¥≠Áâ©Ê∏ÖÂçï***\n";
 	for(var i = 0; i < inputs.length; i++)
 	{
 		var num = 0;
@@ -25,13 +25,13 @@ module.exports = function main(inputs) {
 		for(var tab = 0; tab < goods.length ; tab++)
 		{
 			if(products[index].barcode == goods[tab].barcode){
-				strText +=  "√˚≥∆£∫"+goods[tab].name+"£¨ ˝¡ø£∫"+products[index].number+goods[tab].unit+"£¨µ•º€£∫"+goods[tab].price+"(‘™)£¨–°º∆£∫"+products[index].number*goods[tab].price+"(‘™)\n";
+				strText +=  "ÂêçÁß∞Ôºö"+goods[tab].name+"ÔºåÊï∞ÈáèÔºö"+products[index].number+goods[tab].unit+"ÔºåÂçï‰ª∑Ôºö"+goods[tab].price+"(ÂÖÉ)ÔºåÂ∞èËÆ°Ôºö"+products[index].number*goods[tab].price+"(ÂÖÉ)\n";
 				totalPrice += products[index].number*goods[tab].price;
 			}
 		}
 	}
 	strText += "----------------------\n" +
-            "◊‹º∆£∫"+totalPrice+"(‘™)\n" +
+            "ÊÄªËÆ°Ôºö"+totalPrice+"(ÂÖÉ)\n" +
             "**********************";
     console.log(strText);
     return strText;
