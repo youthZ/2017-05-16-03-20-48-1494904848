@@ -15,7 +15,7 @@ module.exports = function main(inputs) {
 			}
 		}
 		var product = {item:inputs[i],number:num};
-		if(products.indexOf(product) == -1)
+		if(！products.indexOf(product))
 		{
 			products.push(product);
 		}
@@ -31,7 +31,7 @@ module.exports = function main(inputs) {
 		}
 	}
 	strText += "----------------------\n" +
-            "总计：'+totalPrice+'(元)\n" +
+            "总计："+totalPrice+"(元)\n" +
             "**********************";
     console.log(strText);
     return strText;
