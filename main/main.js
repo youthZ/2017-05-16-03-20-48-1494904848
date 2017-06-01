@@ -35,7 +35,7 @@ module.exports = function main(inputs) {
 	{
 		for(var tab = 0; tab < goods.length ; tab++)
 		{
-			if(products[index].item == goods[tab].barcode){
+			if(products[index].barcode == goods[tab].barcode){
 				strText +=  "名称："+goods[tab].name+"，数量："+products[index].number+goods[tab].unit+"，单价："+goods[tab].price+"(元)，小计："+products[index].number*goods[tab].price+"(元)\n";
 				totalPrice += products[index].number*goods[tab].price;
 			}
